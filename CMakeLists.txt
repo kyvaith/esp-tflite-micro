@@ -129,7 +129,7 @@ if("${IDF_VERSION_MAJOR}.${IDF_VERSION_MINOR}" VERSION_GREATER_EQUAL "5.0")
 endif()
 
 # enable ESP-NN optimizations by Espressif
-target_compile_options(${COMPONENT_LIB} PRIVATE -DESP_NN)
+# target_compile_options(${COMPONENT_LIB} PRIVATE -DESP_NN)
 
 set(common_flags -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -O3
                  -Wstrict-aliasing -Wno-unused-parameter -Wall -Wextra -Wvla
